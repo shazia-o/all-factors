@@ -1,0 +1,20 @@
+public class FactorPrinter {
+//This is a small program that prints out all the factors of a given number
+    
+    public static void printFactors (int number) {
+
+//Validation check
+        if (number < 1) {
+            System.out.println("Invalid Value");
+            return;
+        } 
+
+//for loop iterates through numbers from 1 to "number" and uses % (modulus operator) to see if it's evenly divisible by i
+        for (int i = 1; i <= number ; i++) {
+            if (number % i == 0) {
+                System.out.println(i);
+            }
+        } 
+        
+    }
+}
